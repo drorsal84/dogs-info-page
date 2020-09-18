@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@100;200;300;500;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Omnifood is a premium food delivery service with the mission to bring affordable and healty meals to as many people as possible.">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/fontawsome.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="140">
+    <div class="container-fluid main__container">
+        <header>
+            <div class="row nav-row justify-content-center fixed-top">
+                <nav class="navbar navbar-expand-md">
+                    <button class="btn navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <a class="nav-link" href="#summary" active>Summary</a>
+                            <a class="nav-link" href="#dogapp">Dog app</a>
+                            <a class="nav-link" href="#topdogs">Top dogs</a>
+                            <a class="nav-link" href="#adopt">Adopt don't buy</a>
+                            <a class="nav-link" href="#famous">Famous dogs</a>
+                            <a class="nav-link" href="#culture">In pop culture</a>
+                            <a class="nav-link" href="#about">About</a>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <section class="hero-img">
+            <div class="row hero-img__row">
+                <h1>For the love of dogs.<br>Our furry family members.</h1>
+            </div>
+        </section>
+
+        <section id="summary">
+            <div class="row summary__headline justify-content-center">
+                <h2>Summary</h2>
+
+            </div>
+            <div class="row summary__text justify-content-center">
+                <p>Hello! this website is dedicated to all the dog lovers out there. Here you will find useful information about man's best friend. I tried to gather interesting knowledge for people who have dogs or want to adopt one and i hope you will
+                    enjoy your stay :)<br></p>
+            </div>
+
+            <div class="row summary__features-row justify-content-center mt-5">
+                <div class="col-md-2 summary__features--dogapp">
+                    <svg class="bi bi-phone icon-lg">
+                        <use href="img/icons.svg#icon-phone"></use>
+                      </svg>
+                    <h3>Dog App</h3>
+                    <p>Check out my dog app where you can find great information about all dog breeds.</p>
+                </div>
+
+                <div class="col-md-2 summary__features--topdogs">
+                    <svg class="bi bi-trophy icon-lg">
+                        <use href="img/icons.svg#icon-trophy"></use>
+                      </svg>
+                    <h3>Top Dogs</h3>
+                    <p>I gathered and ranked the top five family, guard and work dogs.</p>
+                </div>
+
+                <div class="col-md-2 summary__features--adopt">
+                    <svg class="bi bi-heart icon-lg">
+                        <use href="img/icons.svg#icon-heart"></use>
+                      </svg>
+                    <h3>Please adopt</h3>
+                    <p>Where ever you are in the world, there are always awesome dogs waiting for adoption.</p>
+                </div>
+
+                <div class="col-md-2 summary__features--famous">
+                    <svg class="bi bi-star icon-lg">
+                        <use href="img/icons.svg#icon-star"></use>
+                      </svg>
+                    <h3>Famous dogs</h3>
+                    <p>Throughout history there were dogs who achieved incredible feats.</p>
+                </div>
+
+                <div class="col-md-2 summary__features--culture">
+                    <svg class="bi bi-camera-video icon-lg">
+                        <use href="img/icons.svg#icon-camera-video"></use>
+                      </svg>
+                    <h3>pop culture</h3>
+                    <p>Dogs appear frequently in books, movies, tv shows etc. Here are some of my favorites.</p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="top-dogs">
+            <div class="row top-dogs__headline--row justify-content-center">
+                <h2 id="topdogs">Top Dogs</h2>
+            </div>
+
+            <div class="row top-dogs__links--row justify-content-around">
+                <h3><i class="fas fa-medal"></i>Top five guard dogs</h3>
+                <h3>Top five family dogs</h3>
+                <h3>Top five work dogs</h3>
+            </div>
+        </section>
+
+
+
+
+        <section class="dog-app">
+            <div class="row dog-app__headline--row justify-content-center">
+                <h2 id="dogapp">Dog App</h2>
+            </div>
+
+            <div class="row dog-app__search--row justify-content-center">
+                <div class="col-md-4">
+                    <form class="search">
+                        <div class="input-group mb-3">
+                            <input class="form-control dog-app__search--field" type="text" placeholder="Search by breed">
+                            <div class="input-group-append">
+                                <button class="btn dog-app__search--btn">
+                                    <svg class="bi bi-search icon-sm">
+                                        <use href="img/icons.svg#icon-search"></use>
+                                      </svg>
+                            </button>
+                            </div>
+                    </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row dog-app__results--row">
+                <div class="col-md-3 dog-app__results--col">
+                    <ul class="dog-app__results--list"></ul>
+                    <div class="dog-app__results--pages"></div>
+                </div>
+                <div class="col-md-9 dog-app__results--dog--col">
+
+                </div>
+            </div>
+            <div class="row dog-app__footer--row justify-content-end ">
+                <div class="copyright ">&copy; by Dror Salomon. Powered by <a href="https://thedogapi.com/ " target="_blank " class="link ">thedogapi.com</a>.
+                </div>
+            </div>
+        </section>
+
+
+
+    </div>
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js " integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV " crossorigin="anonymous "></script>
+    <script src="js/jquery.waypoints.min.js "></script>
+<script src="js/bundle.js"></script></body>
+
+</html>
